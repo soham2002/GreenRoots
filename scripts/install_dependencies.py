@@ -8,5 +8,5 @@ def install_dependencies(requirements_file):
         print(f"Error: Failed to install dependencies. {e}")
 
 if __name__ == "__main__":
-    requirements_file = "requirements.txt"  # Path to your requirements.txt file
+    requirements_file = "requirements.txt"  # Path to requirements.txt file
     install_dependencies(requirements_file)
