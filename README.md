@@ -8,7 +8,7 @@ Welcome to the Green Roots AI Model repository! This repository contains code fo
 
 - **Satellite Imagery Analysis**: The model utilizes Landsat satellite imagery from GEE to analyze mangrove distribution and health by computing relevant indices.
 - **Temporal Analysis**: Green Roots provides temporal analysis of mangrove health by computing mean index values over time and visualizing temporal trends.
-- **Interactive Dashboard**: The model includes an interactive dashboard built with Dash, allowing users to explore and visualize satellite imagery and mangrove trends.
+- **Interactive Dashboard**: The model includes an interactive dashboard, allowing users to explore and visualize satellite imagery and mangrove trends.
 
 ## Installation
 
@@ -70,10 +70,6 @@ Contributions to the Green Roots AI Model are welcome! If you'd like to contribu
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-If you have any questions or suggestions regarding the Green Roots AI Model, feel free to contact the project owner at [greenroots@example.com](mailto:greenroots@example.com).
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 Thank you for your interest in Green Roots! We hope it contributes to environmental conservation efforts through advanced satellite imagery analysis and monitoring of mangroves.
