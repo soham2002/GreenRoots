@@ -3,7 +3,7 @@ description: An AI/ML project aimed at promoting mangrove sustainability and enc
 author: Your Name or Company Name
 specification_version: 1.0
 prototype_version: 1.0
-date: "YYYY-MM-DD"
+date: "2024-03-04"
 
 environment_variables:
   ABS_PATH:
