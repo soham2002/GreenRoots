@@ -25,7 +25,7 @@ To run the Green Roots AI Model locally, follow these steps:
    If you already have an account in the GEE you can skip to the next step.
    Create a [Google Earth Engine](https://earthengine.google.com/signup/)Account
    
-4. Authenticate and initialize Google Earth Engine by following the prompts after running the code snippet:
+3. Authenticate and initialize Google Earth Engine by following the prompts after running the code snippet:
 
    ```python
     import ee
@@ -33,7 +33,10 @@ To run the Green Roots AI Model locally, follow these steps:
     ee.Initialize(project='replace_with_your_earth_engine_project_name')
     ```
 
-6. Run the provided Python script containing the Green Roots model code.
+4. Launch the application.
+   ```python
+    python launch_app.py
+    ```
 
 ## Usage
 
@@ -52,6 +55,13 @@ The Green Roots AI Model utilizes Landsat satellite imagery for vegetation analy
 - Landsat 2009
 - Landsat 2014
 - Landsat 2018
+
+Exported the NDVI images to Google Drive and plotted a time series of mean NDVI values over the years.
+
+## Model Overview
+Train a RandomForestRegressor model to predict NDVI for upcoming years and visualized the original NDVI data alongside the predictions.
+Setting up a machine learning pipeline for classifying mangrove areas using remote sensing data, specifically NDVI (Normalized Difference Vegetation Index) imagery.
+Setting up a neural network model for classification using TensorFlow and preparing your training data.
 
 
 ## Contributing
