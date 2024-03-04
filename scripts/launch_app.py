@@ -2,19 +2,18 @@ import os
 import webbrowser
 
 def launch_website():
-    # Path to the directory containing your website
-    website_dir = 'app/'
+    # Get the directory of the current script
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    
+    # Construct the path to the parent directory (common root)
+    common_root = os.path.abspath(os.path.join(script_dir, os.pardir, os.pardir))
 
-    # Check if the directory exists
-    if os.path.exists(website_dir):
-        # Get the absolute path of the directory
-        abs_website_dir = os.path.abspath(website_dir)
-        
-        # Open the website in the default web browser
-        webbrowser.open('file://' + abs_website_dir + '/index.html')
-        print("Website launched successfully.")
-    else:
-        print("Error: Website directory not found.")
+    # Path to the index.html file of your website
+    website_index = os.path.join(common_root, 'GreenRoots', 'app', 'index.html')
+
+    # Open the website in the default web browser
+    webbrowser.open(website_index)
+    print("Website launched successfully.")
 
 if __name__ == "__main__":
     launch_website()
