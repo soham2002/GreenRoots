@@ -59,9 +59,9 @@ The Green Roots AI Model utilizes Landsat satellite imagery for vegetation analy
 Exported the NDVI images to Google Drive and plotted a time series of mean NDVI values over the years.
 
 ## Model Overview
-Train a RandomForestRegressor model to predict NDVI for upcoming years and visualized the original NDVI data alongside the predictions.
-Setting up a machine learning pipeline for classifying mangrove areas using remote sensing data, specifically NDVI (Normalized Difference Vegetation Index) imagery.
-Setting up a neural network model for classification using TensorFlow and preparing your training data.
+- Train a RandomForestRegressor model to predict NDVI for upcoming years and visualized the original NDVI data alongside the predictions.
+- Setting up a machine learning pipeline for classifying mangrove areas using remote sensing data, specifically NDVI (Normalized Difference Vegetation Index) imagery.
+- Setting up a neural network model for classification using TensorFlow and preparing your training data.
 
 
 ## Contributing
