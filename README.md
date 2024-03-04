@@ -1,6 +1,6 @@
 # Green Roots: AI Model
 ![Alt text](https://github.com/soham2002/GreenRoots/blob/master/static/logo.png)
-[Visit Website](https://earthengine.google.com/signup/)
+[Visit Website](https://shreyansh-21.github.io/greenrootswebsite/)
 ## Overview
 
 Welcome to the Green Roots AI Model repository! This repository contains code for an AI model designed to analyze Landsat satellite imagery from Google Earth Engine (GEE) to predict mangrove distribution and health patterns. The model utilizes machine learning techniques and interactive visualization tools to assist in environmental monitoring and conservation efforts.
