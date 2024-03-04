@@ -3,11 +3,10 @@ description: An AI/ML project aimed at promoting mangrove sustainability and enc
 author: Your Name or Company Name
 specification_version: 1.0
 prototype_version: 1.0
-date: "YYYY-MM-DD"
+date: "2024-03-04"
 
 environment_variables:
   ABS_PATH:
-    default: "F:\my_projects"
     description: "Absolute path to the root directory of the project."
     required: true
 
@@ -30,43 +29,3 @@ tasks:
     script: scripts/launch_app.py
     environment_variables:
       INDEX_HTML_PATH: app/index.html
-
-## MODEL related AMP snippet
-- type: create_model
-  name: GreenRoots Model
-  entity_label: greenroots-model
-  description: A model for predicting mangrove health and recommending planting sites.
-  short_summary: GreenRoots Model
-  default_resources:
-    cpu: 2
-    memory: 4
-    gpu: 1
-  default_replication_policy:
-    type: fixed
-    num_replicas: 1
-
-- type: build_model
-  name: Build GreenRoots Model
-  entity_label: greenroots-model
-  comment: Initial build of the GreenRoots model.
-  examples:
-    - request:
-        prompt: "What are the recommended mangrove planting sites?"
-        temperature: 0
-        max_new_tokens: 50
-        repetition_penalty: 0.5
-  target_file_path: 2_model-deploy-model/launch-model.py
-  target_function_name: api_wrapper
-
-- type: deploy_model
-  entity_label: greenroots-model
-
-## APPLICATION related AMP snippet
-- type: start_application
-  name: GreenRoots Application
-  short_summary: Interactive application for promoting mangrove sustainability.
-  long_summary: A user-friendly platform for mapping mangrove health, recommending planting sites, and fostering community engagement.
-  subdomain: greenroots-app
-  script: 3_app-run-python-script/app.py
-  environment_variables:
-    TASK_TYPE: START_APPLICATION
