@@ -1,0 +1,32 @@
+name: GreenRoots
+description: An AI/ML project aimed at promoting mangrove sustainability and encouraging active participation in mangrove plantation and conservation efforts.
+author: Your Name or Company Name
+specification_version: 1.0
+prototype_version: 1.0
+date: "YYYY-MM-DD"
+
+environment_variables:
+  ABS_PATH:
+    default: "F:\my_projects"
+    description: "Absolute path to the root directory of the project."
+    required: true
+
+runtimes:
+  - editor: Workbench
+    kernel: Python 3.8
+
+tasks:
+  - type: run_session
+    name: Install Dependencies
+    script: scripts/install_dependencies.py
+    short_summary: Install dependencies specified in requirements.txt
+    kernel: python3
+    cpu: 2
+    memory: 4
+
+  - type: start_application
+    name: Launch GreenRoots Website
+    short_summary: Launch the GreenRoots website
+    script: scripts/launch_app.py
+    environment_variables:
+      INDEX_HTML_PATH: app/index.html
