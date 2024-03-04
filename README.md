@@ -57,6 +57,7 @@ The Green Roots AI Model utilizes Landsat satellite imagery for vegetation analy
 - Landsat 2018
 
 Exported the NDVI images to Google Drive and plotted a time series of mean NDVI values over the years.
+![Alt text](https://github.com/soham2002/GreenRoots/blob/master/static/ndvi_sc.jpg)
 
 ## Model Overview
 - Train a RandomForestRegressor model to predict NDVI for upcoming years and visualized the original NDVI data alongside the predictions.
